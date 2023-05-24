@@ -63,14 +63,14 @@ public class KahveDunyasi_Mobil {
 
         ReusableMethods.scrollWithUiScrollable("Kahve Dünyası - Ataşehir Migros");
 
-        logger.info("store selected");
+        logger.info("Store selected");
 
     }
 
     @And("choose the product to order")
     public void chooseTheProductToOrder() {
         pages.getLinkTurkKahvesi().click();
-        logger.info("order selected");
+        logger.info("Order selected");
     }
 
     @And("chooses the size, sugar, quantity of the product to be ordered and adds the product to the cart")
@@ -91,7 +91,7 @@ public class KahveDunyasi_Mobil {
         ReusableMethods.touchActionClick(524, 2168);
         pages.getButtonSepeteEkle().click();
 
-        logger.info("size, sugar, quantity of the product selected and product added the cart ");
+        logger.info("Size, sugar, quantity of the product selected and product added the cart ");
     }
 
     @And("verify that the product has been added to the cart")

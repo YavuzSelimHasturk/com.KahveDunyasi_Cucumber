@@ -1,16 +1,11 @@
 package stepDefinitions;
 
-
-import io.appium.java_client.service.local.AppiumDriverLocalService;
-import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.cucumber.java.AfterStep;
-import io.cucumber.java.BeforeAll;
 import io.cucumber.java.Scenario;
 import org.apache.commons.io.FileUtils;
-import org.junit.Before;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.testng.annotations.BeforeTest;
 import utilities.Driver;
 
 import java.io.File;
