@@ -16,14 +16,17 @@ public class Driver {
     public static AppiumDriver getAppiumDriver() {
         URL appiumServerURL = null;
         try {
-            appiumServerURL = new URL("http:0.0.0.0:4723/wd/hub");
+            appiumServerURL = new URL("http:0.0.0.0:4723");
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
         if (appiumDriver == null) {
 
             DesiredCapabilities caps = new DesiredCapabilities();
-            caps.setCapability(MobileCapabilityType.UDID, ConfigReader.getProperty("UDIDNumber"));
+            caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
+            caps.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
+            caps.setCapability(MobileCapabilityType.PLATFORM_VERSION,"12.0");
+            caps.setCapability(MobileCapabilityType.DEVICE_NAME,"Pixel 4");
 
             caps.setCapability("appPackage","com.kahvedunyasi.app");
             caps.setCapability("appActivity","com.kahvedunyasi.app.activities.SplashActivity");

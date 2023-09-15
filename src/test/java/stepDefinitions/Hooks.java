@@ -1,9 +1,12 @@
 package stepDefinitions;
 
+import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Scenario;
 import org.apache.commons.io.FileUtils;
 
+import org.junit.Before;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
@@ -32,9 +35,9 @@ public class Hooks {
             FileUtils.copyFile(source, finalDestination);
         }
     }
-/*
+
     @Before
-    public void setup(String ipAddress, int port) {
+    public AppiumDriverLocalService setup(String ipAddress, int port) {
         ipAddress = "0.0.0.0";
         port = 4723 ;
 
@@ -46,7 +49,7 @@ public class Hooks {
 
 
         service.start();
-      //  return service;
+        return service;
     }
-*/
+
 }

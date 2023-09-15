@@ -6,3 +6,8 @@
 2023-05-24 10:01:59,146 +0300 [main] INFO  (KahveDunyasi_Mobil.java:94) - Size, sugar, quantity of the product selected and product added the cart 
 2023-05-24 10:02:00,942 +0300 [main] INFO  (KahveDunyasi_Mobil.java:101) - Verified that the product has been added to the cart
 2023-05-24 10:02:02,682 +0300 [main] INFO  (KahveDunyasi_Mobil.java:108) - Goes to the cart and finished the process
+2023-09-15 11:08:25,364 +0300 [main] INFO  (KahveDunyasi_Mobil.java:25) - Kahve Dunyasi app opened
+2023-09-15 11:08:33,527 +0300 [main] INFO  (KahveDunyasi_Mobil.java:40) - Kahve Dunyasi app opened correctly
+2023-09-15 11:08:33,666 +0300 [main] INFO  (KahveDunyasi_Mobil.java:46) - Hazir al tab clicked
+2023-09-15 11:08:59,871 +0300 [main] INFO  (KahveDunyasi_Mobil.java:66) - Store selected
+2023-09-15 11:09:05,651 +0300 [main] INFO  (KahveDunyasi_Mobil.java:73) - Order selected

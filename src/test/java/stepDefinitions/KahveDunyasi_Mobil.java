@@ -84,6 +84,7 @@ public class KahveDunyasi_Mobil {
         ReusableMethods.wait(3);
         pages.getPhoneNumberBox().click();
         pages.enterPhoneNumber(ConfigReader.getProperty("phoneNumber"));
+
         pages.getPhoneNumberBox().click();
         pages.getButtonDevamEt().click();
         ReusableMethods.waitForClickablility(pages.getButtonIzinVer(),30);
